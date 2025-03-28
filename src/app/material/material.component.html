@@ -1,0 +1,17 @@
+<div class="menu">
+    <button mat-button>Home</button>
+
+    <button mat-button [matMenuTriggerFor]="belowMenu">Services</button>
+    <mat-menu #belowMenu="matMenu" yPosition="below">
+      <button mat-menu-item>MEAN Stack</button>
+      <button mat-menu-item>MERN Stack</button>
+      <button mat-menu-item>DevOps</button>
+    </mat-menu>
+
+    <button mat-button matTooltip="Info about the registration" routerLink="registration">Registration</button>  
+    <button mat-button>Contact US</button>
+</div>
+
+<mat-toolbar color="primary">
+    <span style="font-family: 'Boldonse', system-ui;">Welcome to Online Class</span>
+</mat-toolbar>

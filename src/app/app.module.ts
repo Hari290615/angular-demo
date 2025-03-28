@@ -7,6 +7,8 @@ import { HeaderComponent } from './header/header.component';
 import { RegistrationComponent } from './registration/registration.component';
 import { HomeComponent } from './home/home.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { MaterialModule } from './material.module';
+import { MaterialComponent } from './material/material.component';
 
 @NgModule({
   declarations: [
@@ -14,11 +16,13 @@ import { NotFoundComponent } from './not-found/not-found.component';
     HeaderComponent,
     RegistrationComponent,
     HomeComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    MaterialComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]
